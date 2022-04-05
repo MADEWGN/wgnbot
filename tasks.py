@@ -50,7 +50,7 @@ if int(_invoke_v[0]) == 0 and int(_invoke_v[1]) <= 12:
 
 BASE = os.path.dirname(__file__)
 PYTHON = "python3"
-PROJECT = "botogram"
+PROJECT = "wgnbot"
 VERSION = "1.0.dev0"
 
 ISSUES = "https://github.com/python-botogram/botogram/issues"

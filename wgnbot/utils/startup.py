@@ -32,7 +32,7 @@ _logger_configured = False
 
 def get_language(lang):
     """Get the GNUTranslations instance of a specific language"""
-    path = pkg_resources.resource_filename("botogram", "i18n/%s.mo" % lang)
+    path = pkg_resources.resource_filename("wgnbot", "i18n/%s.mo" % lang)
     if not os.path.exists(path):
         raise ValueError('Language "%s" is not supported by botogram' % lang)
 
