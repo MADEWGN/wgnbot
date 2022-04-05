@@ -1,0 +1,33 @@
+language: python
+
+# In order to run Python 3.7 or higher, we need xenial
+# https://docs.travis-ci.com/user/languages/python/#python-37-and-higher
+dist: xenial
+
+python:
+- "3.4"
+- "3.5"
+- "3.6"
+- "3.7"
+
+sudo: false
+cache: pip
+
+install:
+- pip install invoke
+
+script:
+- invoke build
+- invoke test
+- invoke lint
+
+notifications:
+  email: false
+  irc:
+    channels:
+    - "chat.freenode.net#pietroalbini"
+    template:
+    - "Build %{result} for %{repository_slug} on branch %{branch} (%{commit})."
+    - "More details: %{build_url}"
+    use_notice: true
+    skip_join: true

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>botogram - Python framework for Telegram bots</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="_static/style.css">
+
+        <div class="color-bar"></div>
+
+        <div class="row">
+            <div class="wrapper">
+                <h1>botogram</h1>
+                <h2>Python framework for Telegram bots</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="wrapper">
+                <div class="cleared">
+                    <div class="left pre-container">
+                <pre>
+<span class="less"><span class="ck">import</span> botogram
+bot = botogram.create(<span class="cs">"API-KEY"</span>)
+</span>
+<span class="cd">@bot.command</span>(<span class="cs">"hello"</span>)
+<span class="ck">def</span> hello_command(chat, message, args):
+    <span class="cc">"""Say hello to the world!"""</span>
+    chat.send(<span class="cs">"Hello world"</span>)
+<span class="less">
+<span class="ck">if</span> __name__ == <span class="cs">"__main__"</span>:
+    bot.run()
+</span></pre>
+                    </div>
+                    <div class="right vcenter-text motto">
+                        <p>Just focus on your bots.</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://github.com/python-botogram/botogram">
+                            Source code
+                        </a></li>
+                        <li><a href="/docs">
+                            Documentation
+                        </a></li>
+                        <li><a href="https://telegram.me/botogram_framework">
+                            Telegram channel
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="wrapper">
+                <p>
+                    botogram is a Python framework, which allows you to focus
+                    just on creating your Telegram bots, without worrying
+                    about the underlying Bots API.
+                </p>
+                <p>
+                    While most of the libraries for Telegram out there just
+                    wrap the Bots API, botogram focuses heavily on the
+                    development experience, aiming to provide you the best API
+                    possible. Most of the Telegram implementation details are
+                    managed by botogram, so you can just focus on your bot.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>Copyright &copy; 2015-2019
+                    <a href="https://github.com/python-botogram/botogram/blob/master/AUTHORS">The botogram authors</a>
+                </li>
+                <li>botogram is released under the MIT license.</li>
+            </ul>
+        </footer>
+
+        <link rel="stylesheet" href="/fonts/bitter/include.min.css">
+        <link rel="stylesheet" href="/fonts/dejavu-sans/include.min.css">
+        <link rel="stylesheet" href="/fonts/hack/include.min.css">
+    </body>
+</html>
