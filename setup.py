@@ -19,7 +19,7 @@ import setuptools
 
 setuptools.setup(
     name = "wgnbot",
-    version = "0.6.1",
+    version = "0.6.2",
     url = "https://madewgn.my.id",
 
     license = "MIT",
